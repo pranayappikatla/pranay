@@ -25,7 +25,7 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#about" className="text-white font-bold text-xl tracking-tight">
-          <span className="text-accent">P</span>ranay
+          <span className="text-accent">P</span>ranay Appikatla
         </a>
 
         {/* Desktop links */}
@@ -43,7 +43,7 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="mailto:pranay@example.com"
+          href="mailto:0pranay.appikatla0@gmail.com"
           className="hidden md:inline-flex btn-primary text-sm"
         >
           Hire Me
@@ -81,7 +81,7 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <a href="mailto:pranay@example.com" className="btn-primary text-sm w-fit">
+              <a href="mailto:0pranay.appikatla0@gmail.com" className="btn-primary text-sm w-fit">
                 Hire Me
               </a>
             </li>

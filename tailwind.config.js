@@ -18,8 +18,8 @@ export default {
         mono: ['Fira Code', 'monospace'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.6s ease-out forwards',
-        'slide-up': 'slideUp 0.6s ease-out forwards',
+        'fade-in': 'fadeIn 0.6s ease-out both',
+        'slide-up': 'slideUp 0.6s ease-out both',
       },
       keyframes: {
         fadeIn: {
