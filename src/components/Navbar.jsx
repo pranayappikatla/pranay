@@ -73,7 +73,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-gray-300 hover:text-white text-sm font-medium transition-colors"
+                  className="block py-2 text-gray-300 hover:text-white text-sm font-medium transition-colors min-h-[44px] flex items-center"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

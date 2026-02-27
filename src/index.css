@@ -5,14 +5,20 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Prevent font size bump on orientation change on iOS */
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
     @apply bg-gray-950 text-gray-100 font-sans antialiased;
+    /* Push content above iPhone home indicator */
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   * {
     @apply box-border;
+    /* Remove tap flash on iOS */
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
@@ -30,11 +36,12 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-medium px-5 py-2.5 rounded-lg transition-colors duration-200;
+    /* min-h ensures 44px touch target on mobile */
+    @apply inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark active:bg-accent-dark text-white font-medium px-5 py-3 min-h-[44px] rounded-lg transition-colors duration-200;
   }
 
   .btn-outline {
-    @apply inline-flex items-center gap-2 border border-gray-700 hover:border-accent text-gray-300 hover:text-white font-medium px-5 py-2.5 rounded-lg transition-colors duration-200;
+    @apply inline-flex items-center justify-center gap-2 border border-gray-700 hover:border-accent active:border-accent text-gray-300 hover:text-white active:text-white font-medium px-5 py-3 min-h-[44px] rounded-lg transition-colors duration-200;
   }
 }
 

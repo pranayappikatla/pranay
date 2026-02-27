@@ -12,30 +12,30 @@ export default function Hero() {
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-20 relative">
+      <div className="max-w-6xl mx-auto px-6 py-12 md:py-20 relative">
         <div className="max-w-3xl">
           <p className="text-accent font-mono text-sm mb-4 animate-fade-in">
             Hi, my name is
           </p>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight animate-slide-up">
             {personalInfo.name.split(' ')[0]}{' '}
             <span className="text-gray-400">{personalInfo.name.split(' ').slice(1).join(' ')}</span>
           </h1>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-500 mb-6 animate-slide-up">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-gray-500 mb-6 animate-slide-up">
             {personalInfo.tagline}
           </h2>
-          <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl animate-slide-up">
+          <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-10 max-w-2xl animate-slide-up">
             {personalInfo.bio}
           </p>
 
-          <div className="flex flex-wrap gap-4 animate-slide-up">
-            <a href="#projects" className="btn-primary">
+          <div className="flex flex-col sm:flex-row gap-3 animate-slide-up">
+            <a href="#projects" className="btn-primary w-full sm:w-auto">
               View My Work
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a href="#contact" className="btn-outline">
+            <a href="#contact" className="btn-outline w-full sm:w-auto">
               Get In Touch
             </a>
           </div>
