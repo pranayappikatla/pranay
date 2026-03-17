@@ -72,7 +72,7 @@ export const projects = [
       "JavaScript implementation of classical cipher algorithms — Caesar cipher, Polybius square, and Vigenère cipher — with comprehensive test coverage using Mocha and Chai.",
     tags: ["JavaScript", "Algorithms", "Mocha", "Chai"],
     github: "https://github.com/pranayappikatla/Project-Decoder-Ring",
-    live: "",
+    live: "https://pranayappikatla.github.io/Project-Decoder-Ring/",
     featured: false,
     icon: "terminal",
   },
