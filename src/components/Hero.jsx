@@ -109,7 +109,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full border border-violet-400/15 scale-[1.12]" />
               {/* Photo */}
               <img
-                src="/avatar.jpg"
+                src={`${import.meta.env.BASE_URL}avatar.jpg`}
                 alt="Pranay Appikatla"
                 className="w-full h-full rounded-full object-cover shadow-2xl shadow-indigo-500/30"
               />

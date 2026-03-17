@@ -1,8 +1,8 @@
 export const personalInfo = {
   name: "Pranay Appikatla",
-  title: "DevOps Engineer",
-  tagline: "Building resilient cloud infrastructure and AI-powered automation.",
-  bio: "I'm a DevOps engineer focused on building resilient cloud infrastructure and leveraging AI to automate complex workflows. I specialize in AWS, container orchestration, and CI/CD pipelines — bridging the gap between development and operations to ship faster and more reliably.",
+  title: "React Developer",
+  tagline: "Building fast, accessible, and beautiful web experiences with React.",
+  bio: "I'm a React developer who loves crafting intuitive user interfaces and scalable front-end architectures. I specialize in React, Next.js, and TypeScript — turning complex problems into clean, performant web apps that users enjoy.",
   email: "0pranay.appikatla0@gmail.com",
   github: "https://github.com/pranayappikatla",
   linkedin: "https://www.linkedin.com/in/pranay-appikatla/",
@@ -11,12 +11,34 @@ export const personalInfo = {
 
 export const projects = [
   {
+    id: 7,
+    title: "KeyVerse Bible",
+    description:
+      "A Bible verse discovery app that lets you search, explore, and save key verses — vibe coded from scratch. Built with React and deployed as a live web app.",
+    tags: ["React", "JavaScript", "Vibe Coded", "AWS Bedrock", "AWS Basics"],
+    github: "https://github.com/pranayappikatla",
+    live: "https://keyversebible.org",
+    featured: true,
+    icon: "web",
+  },
+  {
     id: 1,
     title: "NFT Marketplace",
     description:
-      "Full-stack digital marketplace running on Ethereum via Polygon. Built with Next.js, smart contracts authored in Solidity and deployed via Hardhat, with IPFS for decentralized asset storage.",
-    tags: ["Next.js", "Solidity", "Ethereum", "Polygon", "Hardhat"],
+      "Full-stack digital marketplace built with Next.js and React. Features wallet integration, dynamic NFT listings, and real-time bidding — backed by Solidity smart contracts on Polygon and IPFS for decentralized asset storage.",
+    tags: ["Next.js", "React", "Solidity", "Ethereum", "Polygon"],
     github: "https://github.com/pranayappikatla/polygon-ethereum-nextjs-marketplace",
+    live: "",
+    featured: true,
+    icon: "web",
+  },
+  {
+    id: 4,
+    title: "Pomodoro Timer",
+    description:
+      "Productivity timer app built with React featuring configurable work/break intervals, session history tracking, and a clean, distraction-free UI.",
+    tags: ["React", "JavaScript", "CSS"],
+    github: "https://github.com/pranayappikatla/pomodoro-timer-project",
     live: "",
     featured: true,
     icon: "web",
@@ -40,19 +62,8 @@ export const projects = [
     tags: ["Node.js", "Express", "REST API", "JavaScript"],
     github: "https://github.com/pranayappikatla/movies-backend-project",
     live: "",
-    featured: true,
-    icon: "terminal",
-  },
-  {
-    id: 4,
-    title: "Pomodoro Timer",
-    description:
-      "Productivity timer app built with React featuring configurable work/break intervals, session history tracking, and a clean, distraction-free UI.",
-    tags: ["React", "JavaScript", "CSS"],
-    github: "https://github.com/pranayappikatla/pomodoro-timer-project",
-    live: "",
     featured: false,
-    icon: "web",
+    icon: "terminal",
   },
   {
     id: 5,
@@ -76,64 +87,31 @@ export const projects = [
     featured: false,
     icon: "cloud",
   },
-  {
-    id: 7,
-    title: "GitOps Deployment Pipeline",
-    description:
-      "Production-ready GitOps template using ArgoCD and Terraform for zero-downtime blue/green deployments on EKS. Includes automated rollback on health-check failure and environment promotion gates.",
-    tags: ["Terraform", "ArgoCD", "GitHub Actions", "EKS", "Kubernetes"],
-    github: "https://github.com/pranayappikatla",
-    live: "",
-    featured: false,
-    icon: "terminal",
-  },
-  {
-    id: 8,
-    title: "AI Infrastructure Assistant",
-    description:
-      "LangChain-powered chatbot that ingests CloudWatch logs and runbooks to diagnose incidents and suggest remediation steps in natural language. Exposed via a FastAPI endpoint integrated with Slack.",
-    tags: ["Python", "LangChain", "OpenAI API", "FastAPI", "CloudWatch"],
-    github: "https://github.com/pranayappikatla",
-    live: "",
-    featured: false,
-    icon: "web",
-  },
-  {
-    id: 9,
-    title: "Container Vulnerability Scanner",
-    description:
-      "CI pipeline integration that scans Docker images with Trivy on every pull request, blocks merges on critical CVEs, and posts a detailed remediation report directly to the GitHub PR as a comment.",
-    tags: ["Python", "Docker", "Trivy", "GitHub Actions", "Bash"],
-    github: "https://github.com/pranayappikatla",
-    live: "",
-    featured: false,
-    icon: "terminal",
-  },
 ]
 
 export const skills = [
   {
-    category: "Cloud & Infrastructure",
-    items: ["AWS", "EC2", "S3", "Lambda", "RDS", "CloudFormation", "Terraform"],
+    category: "Frontend",
+    items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3"],
   },
   {
-    category: "Containers & Orchestration",
-    items: ["Docker", "Kubernetes", "Helm", "ECS", "EKS"],
+    category: "Styling & UI",
+    items: ["Tailwind CSS", "Styled Components", "Framer Motion", "Responsive Design", "Accessibility"],
   },
   {
-    category: "CI/CD & Automation",
-    items: ["GitHub Actions", "Jenkins", "ArgoCD", "GitLab CI", "Ansible"],
+    category: "State & Data",
+    items: ["React Query", "Redux", "Zustand", "Context API", "REST APIs", "GraphQL"],
   },
   {
-    category: "AI & ML",
-    items: ["OpenAI API", "LangChain", "AWS Bedrock", "SageMaker", "Prompt Engineering"],
+    category: "Tooling & Testing",
+    items: ["Vite", "Webpack", "Jest", "React Testing Library", "Mocha", "Chai"],
   },
   {
-    category: "Languages & Scripting",
-    items: ["Python", "Bash", "Go", "TypeScript", "SQL"],
+    category: "Backend & APIs",
+    items: ["Node.js", "Express", "SQL", "Knex.js", "PostgreSQL", "Firebase"],
   },
   {
-    category: "Monitoring & Observability",
-    items: ["Prometheus", "Grafana", "CloudWatch", "Datadog", "ELK Stack"],
+    category: "DevOps & Cloud",
+    items: ["Git", "GitHub Actions", "AWS", "Docker", "Vercel", "Netlify"],
   },
 ]
